@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+    </script>
+    <style>
+        body{
+        width:100%;
+        margin-top:0;
+        
+    }
+    .callout {
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+}
+.callout-header {
+  padding: 25px 15px;
+  background: #555;
+  font-size: 30px;
+  color: white;
+}
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+.callout-container {
+  padding: 15px;
+  background-color: #ccc;
+  color: black
+}
+
+    </style>
+</head>
+<body>
+    <form action="action_page.php">
+<div>
+    <textarea id="subject" name="subject" placeholder="You are chatting with our chatbot how can we help?" style="height:400px" maxlength="20"></textarea>
+</div>
+</div>
+<div class="row">
+<input type="submit" value="Submit">
+</div>
+</form>
+<div class="callout">
+    <div class="callout-header">HEY</div>
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    <div class="callout-container">
+      <p>If our chatbot is unable to help please write us an email</p>
+    </div>
+  </div>
+    
+</body>
+</html>
